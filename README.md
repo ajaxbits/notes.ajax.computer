@@ -21,6 +21,8 @@
   </p>
 </div>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2e36fb73-4033-4b32-bb89-9540747aff42/deploy-status)](https://app.netlify.com/sites/ajax-code-notes/deploys)
+
 ## Features
 
 - Notes can:
@@ -91,17 +93,17 @@ module.exports = {
     {
       resolve: `gatsby-theme-code-notes`,
       options: {
-        basePath: '/',
-        contentPath: '/content/notes',
+        basePath: "/",
+        contentPath: "/content/notes",
         gitRepoContentPath:
-          'https://github.com/mrmartineau/gatsby-theme-code-notes/tree/master/example/code-notes/',
+          "https://github.com/mrmartineau/gatsby-theme-code-notes/tree/master/example/code-notes/",
         showDescriptionInSidebar: true,
         showThemeInfo: false,
-        logo: 'https://brand.zander.wtf/Avatar.png',
+        logo: "https://brand.zander.wtf/Avatar.png",
       },
     },
   ],
-}
+};
 ```
 
 Add notes to your site by creating `md` or `mdx` files inside `/content/notes`.
