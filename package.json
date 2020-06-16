@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "gatsby": "^2.23.1",
+    "gatsby-plugin-manifest": "^2.4.11",
+    "gatsby-plugin-offline": "^3.2.9",
     "gatsby-theme-code-notes": "1.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
@@ -28,8 +30,5 @@
   "bugs": {
     "url": "https://github.com/mrmartineau/gatsby-starter-code-notes/issues"
   },
-  "devDependencies": {
-    "gatsby-plugin-manifest": "^2.4.11",
-    "gatsby-plugin-offline": "^3.2.9"
-  }
+  "devDependencies": {}
 }
