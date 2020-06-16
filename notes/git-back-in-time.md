@@ -2,7 +2,6 @@
 title: How to go back in git time
 tags:
   - git
-  - GitHub
 emoji: 🕰️
 link: https://ohshitgit.com/
 ---
