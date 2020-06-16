@@ -12,7 +12,8 @@ module.exports = {
         basePath: "/",
         showDescriptionInSidebar: true,
         showThemeInfo: false,
-        // logo: `static/favicon.png`,
+        logo: `/static/logo.png`,
+        gitRepoContentPath: `https://github.com/beattheprose/code-notes/tree/master/notes`,
       },
     },
     {
