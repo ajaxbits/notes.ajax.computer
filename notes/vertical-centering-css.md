@@ -1,7 +1,7 @@
 ---
 title: Vertical Centering in CSS
 tags:
-  - CSS
+  - css
 emoji: ↕
 ---
 
