@@ -6,13 +6,30 @@ emoji: 👍
 link: https://www.hanselman.com/blog/EasilyRenameYourGitDefaultBranchFromMasterToMain.aspx
 ---
 
-# For existing repos
+# Configuring git natively
+
+Add the following to your git config (either `~/.config/git/config` or `~/.gitconfig`):
+
+```shell
+[init]
+    templateDir = ~/.config/git/template/
+```
+
+which will point git to look at `~/.config/git/template` when evoking `git init`.
+
+Now, create a new file at `~/.config/git/template/HEAD` with the following text, which will rename the default branch to `main`:
+
+```shell
+ref:refs/heads/main
+```
+
+# Changing existing repos
 
 ```shell
 git branch -m master main && git push -u origin main
 ```
 
-# For new repos
+# Changing new repos
 
 ```shell
 git init
