@@ -26,7 +26,7 @@ ref:refs/heads/main
 # Changing existing repos
 
 ```shell
-git branch -m master main && git push -u origin main
+git branch -m master main && git push -u origin main && git push -d origin master
 ```
 
 # Changing new repos
