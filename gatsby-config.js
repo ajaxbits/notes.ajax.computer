@@ -12,7 +12,7 @@ module.exports = {
         basePath: "/",
         showDescriptionInSidebar: true,
         showThemeInfo: false,
-        gitRepoContentPath: `https://github.com/beattheprose/code-notes/tree/master/notes/`,
+        gitRepoContentPath: `https://github.com/beattheprose/notes.ajax.computer/blob/main/notes/`,
       },
     },
     {
