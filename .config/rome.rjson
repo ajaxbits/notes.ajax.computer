@@ -1,0 +1,8 @@
+// For configuration documentation see http://romefrontend.dev/#project-configuration
+name: "notes.ajax.computer"
+lint: {
+	ignore: [
+		"./notes"
+]
+}
+root: true
