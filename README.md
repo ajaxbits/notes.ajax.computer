@@ -19,9 +19,10 @@
     <a href="#usage">Usage</a> •
     <a href="https://code-notes-example.netlify.com/">Demo</a>
   </p>
-</div>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2e36fb73-4033-4b32-bb89-9540747aff42/deploy-status)](https://app.netlify.com/sites/ajax-code-notes/deploys)
+<a href="https://www.producthunt.com/posts/code-notes-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-code-notes-2" target="_blank" aria-label="View Code Notes on Product Hunt"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=206754&theme=light" alt="Code Notes - A Gatsby theme for publishing code-related notes online | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
+
+</div>
 
 ## Features
 
@@ -29,6 +30,7 @@
   - be written using Markdown (`.md`) or [MDX](https://mdxjs.com/) (`.mdx`)
   - have zero, one or many tags. See an example [here](https://code-notes-example.netlify.app/syntax-highlighting)
   - have associated emojis 👏
+  - be nested in subfolders so you can organise them how you like
 - Full syntax highlighting for most programming languages
 - Extra markdown features have also been added. Find out more [here](https://code-notes-example.netlify.app/markdown-features)
 - Note search powered by the super-fast [Flexsearch](https://github.com/nextapps-de/flexsearch)
@@ -93,22 +95,52 @@ module.exports = {
     {
       resolve: `gatsby-theme-code-notes`,
       options: {
-        basePath: "/",
-        contentPath: "/content/notes",
+        basePath: '/',
+        contentPath: '/content/notes',
         gitRepoContentPath:
-          "https://github.com/mrmartineau/gatsby-theme-code-notes/tree/master/example/code-notes/",
+          'https://github.com/mrmartineau/gatsby-theme-code-notes/tree/master/example/code-notes/',
         showDescriptionInSidebar: true,
         showThemeInfo: false,
-        logo: "https://brand.zander.wtf/Avatar.png",
+        logo: 'https://brand.zander.wtf/Avatar.png',
       },
     },
   ],
-};
+}
 ```
 
 Add notes to your site by creating `md` or `mdx` files inside `/content/notes`.
 
 > Note that if you've changed the default `contentPath` in the configuration, you'll want to add your markdown files in the directory specified by that path.
+
+### Note frontmatter
+
+Frontmatter information (written in YAML) can be used to add metadata and extra information for your notes
+
+Only the `title` field is required, the rest are optional.
+
+```yaml
+---
+title: Note metadata
+emoji: 😃
+tags:
+  - metadata
+  - info
+link: https://zander.wtf
+---
+
+```
+
+#### Link
+
+The `link` item is used to display a link that is related to the note itself. It will appear below the title if.
+
+#### Emoji
+
+The `emoji` frontmatter item will add an emoji beside the title on listing views and above the title on individual note pages
+
+#### Tags
+
+The `tags` array frontmatter item allows you to add as many tags to a note as you'd like.
 
 ### Advanced usage
 
